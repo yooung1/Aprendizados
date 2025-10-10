@@ -80,9 +80,10 @@ Descreva a lógica de forma simples e objetiva.
 # Exemplo de código funcional
 def exemplo():
     ...
+    ```
 
 
----
+
 
 🧠 Entendimento
 
