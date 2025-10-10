@@ -10,8 +10,9 @@
 
 Este projeto serve como um **banco de lógica e referência rápida**.  
 Sempre que encontro um problema:
-1. Verifico se já documentei algo semelhante.
-2. Se encontrar, aplico e melhoro a solução.
+
+1. Verifico se já documentei algo semelhante.  
+2. Se encontrar, aplico e melhoro a solução.  
 3. Se não encontrar, estudo, resolvo e documento aqui.
 
 > O objetivo é usar tanto esta documentação que as soluções se tornem automáticas, decoradas e entendidas profundamente.
@@ -79,27 +80,19 @@ Descreva a lógica de forma simples e objetiva.
 ```python
 # Exemplo de código funcional
 def exemplo():
-    ...
+    print("Olá, mundo!")
+```
 
-
-
-## 
-🧠 Entendimento
-
+## 🧠 Entendimento
 Explique o porquê da lógica funcionar e quando aplicá-la.
 
-⚙️ Boas práticas
+## ⚙️ Boas práticas
+- [ ] Use exemplos simples e comentados  
+- [ ] Evite duplicar soluções  
+- [ ] Mantenha nomes claros e padronizados  
+- [ ] Documente melhorias quando otimizar o código
+```
 
- Use exemplos simples e comentados
-
- Evite duplicar soluções
-
- Mantenha nomes claros e padronizados
-
- Documente melhorias quando otimizar o código
-
-
- 
 ---
 
 ## 🧭 EXEMPLO REAL
@@ -120,32 +113,29 @@ if user.is_authenticated:
         return Response("Acesso restrito")
 else:
     return Response("Usuário não autenticado")
+```
 
-
-
-🧠 Entendimento
-
-Condicionais aninhadas são úteis para validações hierárquicas.
+## 🧠 Entendimento
+Condicionais aninhadas são úteis para validações hierárquicas.  
 Mas quando há muitos níveis, o ideal é extrair a lógica para funções auxiliares.
 
-⚙️ Boas práticas
+## ⚙️ Boas práticas
+- Evite blocos aninhados profundos.  
+- Prefira retornos antecipados (`return`) para simplificar a leitura.  
+- Separe as regras em funções pequenas e reutilizáveis.
+```
 
-Evite blocos aninhados profundos.
+---
 
-Prefira retornos antecipados (return) para simplificar a leitura.
+## 🧩 LICENÇA
 
-Separe as regras em funções pequenas e reutilizáveis.
-
-
-
-🧩 LICENÇA
-
-Este repositório é de uso pessoal e educativo.
+Este repositório é de uso **pessoal e educativo**.  
 Você pode se inspirar e adaptar o conteúdo, mas sempre valorize o aprendizado contínuo e a prática diária.
 
+---
 
-💬 NOTA FINAL
+## 💬 NOTA FINAL
 
-Este repositório não é apenas uma coleção de códigos,
-é um registro do meu crescimento como desenvolvedor.
-Cada linha aqui representa um erro resolvido, um conceito entendido e uma evolução prática no caminho da programação.
+> Este repositório não é apenas uma coleção de códigos,  
+> é um **registro do meu crescimento como desenvolvedor**.  
+> Cada linha aqui representa um erro resolvido, um conceito entendido e uma evolução prática no caminho da programação.
