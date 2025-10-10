@@ -80,11 +80,10 @@ Descreva a lógica de forma simples e objetiva.
 # Exemplo de código funcional
 def exemplo():
     ...
-    ```
 
 
 
-
+## 
 🧠 Entendimento
 
 Explique o porquê da lógica funcionar e quando aplicá-la.
@@ -121,3 +120,32 @@ if user.is_authenticated:
         return Response("Acesso restrito")
 else:
     return Response("Usuário não autenticado")
+
+
+
+🧠 Entendimento
+
+Condicionais aninhadas são úteis para validações hierárquicas.
+Mas quando há muitos níveis, o ideal é extrair a lógica para funções auxiliares.
+
+⚙️ Boas práticas
+
+Evite blocos aninhados profundos.
+
+Prefira retornos antecipados (return) para simplificar a leitura.
+
+Separe as regras em funções pequenas e reutilizáveis.
+
+
+
+🧩 LICENÇA
+
+Este repositório é de uso pessoal e educativo.
+Você pode se inspirar e adaptar o conteúdo, mas sempre valorize o aprendizado contínuo e a prática diária.
+
+
+💬 NOTA FINAL
+
+Este repositório não é apenas uma coleção de códigos,
+é um registro do meu crescimento como desenvolvedor.
+Cada linha aqui representa um erro resolvido, um conceito entendido e uma evolução prática no caminho da programação.
