@@ -6,3 +6,8 @@ https://gist.github.com/ruimaranhao/4e18cbe3dad6f68040c32ed6709090a3
 https://gist.github.com/ruimaranhao/4e18cbe3dad6f68040c32ed6709090a3#equality-checking
 
 
+strings magicas -- nao deixar strings soltas no codigo -- criar uma constante com um comentario explicando o porque dessa string, ai quando alguem for trocar algum dia ele vai entender pq aquilo ta la
+
+é sempre bom criar exceções como class e traduzir elas usando o lazzy _
+
+single responsability, cada metodo e classe deve ser responsavel por uma unica coisa
