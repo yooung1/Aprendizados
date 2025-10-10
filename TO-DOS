@@ -1,0 +1,8 @@
+no arquivo de condicionais adicionar uma seção falando sobre 
+Avoid comparing to True, False or None.
+
+https://gist.github.com/ruimaranhao/4e18cbe3dad6f68040c32ed6709090a3
+
+https://gist.github.com/ruimaranhao/4e18cbe3dad6f68040c32ed6709090a3#equality-checking
+
+
