@@ -80,3 +80,43 @@ Descreva a lógica de forma simples e objetiva.
 # Exemplo de código funcional
 def exemplo():
     ...
+
+
+---
+
+🧠 Entendimento
+
+Explique o porquê da lógica funcionar e quando aplicá-la.
+
+⚙️ Boas práticas
+
+ Use exemplos simples e comentados
+
+ Evite duplicar soluções
+
+ Mantenha nomes claros e padronizados
+
+ Documente melhorias quando otimizar o código
+
+
+ 
+---
+
+## 🧭 EXEMPLO REAL
+
+```markdown
+# CONDICIONAIS ANINHADAS EM PYTHON (DRF)
+> Exemplo simples de uso de condicionais aninhadas para validações em uma view.
+
+## 🧩 Contexto
+Usadas quando há verificações que dependem de outras, como permissões ou autenticações.
+
+## 💡 Solução
+```python
+if user.is_authenticated:
+    if user.is_superuser:
+        return Response("Acesso total")
+    else:
+        return Response("Acesso restrito")
+else:
+    return Response("Usuário não autenticado")
