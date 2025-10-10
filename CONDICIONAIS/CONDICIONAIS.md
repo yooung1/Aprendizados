@@ -46,18 +46,18 @@ Condicionais aninhadas tornam o código confuso e difícil de ler, pois exigem q
 
 ```python
 # Exemplo de condicional aninhada
-user_type = "super_admin"
-user_age = 19
-user_driving_license = True
-
-if not user_type == "super_admin":
-    if user_age >= 19:
-        if user_driving_license == False:
-            return
+def getPayAmount(self):
+    if self.isDead:
+        result = deadAmount()
+    else:
+        if self.isSeparated:
+            result = separatedAmount()
         else:
-            return "ACCEPTED -- EXECUTE PROCESS"
-    elif user_age <= 18:
-        return "do something"
+            if self.isRetired:
+                result = retiredAmount()
+            else:
+                result = normalPayAmount()
+    return result
 ```
 
 Na forma acima, o código se torna difícil de ler e entender.  
@@ -78,24 +78,14 @@ Separar as condições em blocos independentes melhora a **clareza e previsibili
 A ideia é **barrar cedo** as condições de erro (falhas) e executar a lógica principal somente se todas forem satisfeitas.
 
 ```python
-# Exemplo de condicional performática e otimizada
-
-# 1. Barramento de Super Admin (se a intenção for tratar esse tipo de usuário)
-if user_type == "super_admin":
-    # Tratar caso específico (exemplo: super admin não precisa de outras checagens)
-    return "SUPER_ADMIN -- EXECUTE PROCESS"
-
-# 2. Barramento de idade (se a regra for barrar menores de 19)
-if user_age < 19:
-    return "REJECTED: UNDERAGE"
-
-# 3. Barramento de habilitação (se for a regra final de acesso)
-if not user_driving_license:
-    return "REJECTED: NO LICENSE"
-
-# Se todas as condições de falha forem superadas,
-# executa o fluxo principal e retorna o sucesso.
-return "ACCEPTED -- EXECUTE PROCESS"
+def getPayAmount(self):
+    if self.isDead:
+        return deadAmount()
+    if self.isSeparated:
+        return separatedAmount()
+    if self.isRetired:
+        return retiredAmount()
+    return normalPayAmount()
 ```
 
 Neste formato, fica claro que:
