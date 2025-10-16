@@ -11,3 +11,6 @@ strings magicas -- nao deixar strings soltas no codigo -- criar uma constante co
 é sempre bom criar exceções como class e traduzir elas usando o lazzy _
 
 single responsability, cada metodo e classe deve ser responsavel por uma unica coisa
+
+
+template method (https://refactoring.guru/design-patterns/template-method)
